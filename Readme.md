@@ -1,4 +1,4 @@
-## Fun with Triangles
+## Palindrom Birthday
 
 Find out whether your birthday is a Palindrome or Not.
 
