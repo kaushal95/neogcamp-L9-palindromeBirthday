@@ -1,0 +1,144 @@
+:root {
+    --primary-clr: cornflowerblue;
+
+}
+body{
+    background-color: black;
+    color: var(--primary-clr);
+}
+h2{
+    color: var(--primary-clr);
+    margin: 2rem auto;
+    text-align: center;
+}
+label,
+input {
+    display: block;
+    width: 50vw;
+}
+.input {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-clr);
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    margin-top: 2rem;
+}
+
+
+.btn:hover {
+    background-color: var(--primary-clr);
+    color: black;
+    border-color: white;
+    transform: scale(1.2);
+}
+
+.output {
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    overflow: hidden;
+    max-width: 70vw;
+    text-align: center;
+}
+
+.celebrate {
+    animation: mymove 2s linear 2;
+}
+footer {
+    overflow:hidden ;
+    margin: 0 auto;
+    background-color: var(--primary-clr);
+    color: black;
+    width: 100vw;
+    text-align: center;
+    /* color: black; */
+    padding: 1rem;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+footer .link-list {
+    text-align: center;
+    margin: 1rem 0;
+    list-style-type: none;
+    margin: 1rem auto;
+}
+
+footer .link-list li {
+    display: inline;
+    padding: 1rem;
+}
+
+footer .footer-text {
+    /* font-weight: bold; */
+    font-size: large;
+}
+
+footer li a i {
+    color: black;
+    font-size: 1.3rem;
+}
+
+footer li a i:hover {
+    transform: scale(1.5);
+}
+
+@keyframes mymove {
+    0% {
+        transform: translate(-300px,0);
+    }
+
+    25% {
+                transform: translate(-100px,0);;
+    }
+
+    50% {
+        transform: translate(300px,0);
+    }
+
+    75% {
+        transform: translate(100px,0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (min-width:760px) {
+
+    input,
+    label {
+        width: 40vw;
+    }
+    .output{
+    max-width: 60vw;
+    }
+}
+
+@media screen and (min-width:960px) {
+
+    input,
+    label {
+        width: 30vw;
+    }
+    .output{
+    max-width: 50vw;
+    }
+}
+
